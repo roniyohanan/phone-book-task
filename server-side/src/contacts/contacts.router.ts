@@ -8,7 +8,7 @@ const ContactsRouter: Router = Router();
 
 ContactsRouter.post('/', ValidateRequest(createContactSchema), wrapAsync(ContactsController.create));
 
-ContactsRouter.get('/:name', ValidateRequest(validateName), wrapAsync(ContactsController.getByName));
+ContactsRouter.get('/by-name/:name', ValidateRequest(validateName), wrapAsync(ContactsController.getByName));
 ContactsRouter.get('/:id', ValidateRequest(validateId), wrapAsync(ContactsController.getById));
 ContactsRouter.get('/', wrapAsync(ContactsController.getAll));
 

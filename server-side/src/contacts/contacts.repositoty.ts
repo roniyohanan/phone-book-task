@@ -11,7 +11,7 @@ export class ContactsRepository {
   }
 
   static getByName(name: string): Promise<Contact[]> {
-    return ContactModel.find({fullName: name}).exec();
+    return ContactModel.find({ fullName: name }).exec();
   }
 
   static getAll(): Promise<Contact[]> {

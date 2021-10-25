@@ -13,10 +13,8 @@ export class ContactsManager {
     return contact;
   }
 
-  static async getByName(name: string): Promise<Contact[]> {
-    const contacts = await ContactsRepository.getByName(name);
-    if (contacts.length===0) throw new ContactNotFound();
-    return contacts;
+  static getByName(name: string): Promise<Contact[]> {
+    return ContactsRepository.getByName(name);
   }
 
   static create(contact: Contact): Promise<Contact> {

@@ -18,7 +18,7 @@ export const validateName = Joi.object({
   query: {},
   body: {},
   params: {
-    id: Joi.string().required(),
+    name: Joi.string().required(),
   },
 });
 
