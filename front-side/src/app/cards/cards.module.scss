@@ -1,0 +1,20 @@
+@import "../../styles/colors";
+
+.info {
+  width: 20rem;
+  background-color: $orange;
+  padding: 1rem 0;
+  padding-left: 2rem;
+  margin: 2rem;
+  border-radius: 1.5rem;
+  direction: ltr;
+  color: $white;
+  font-weight: bold;
+}
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+

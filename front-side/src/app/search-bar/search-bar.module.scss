@@ -1,0 +1,33 @@
+@import "../../styles/colors";
+
+.search {
+    width: 20rem;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 2rem;
+    &__input {
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        border-radius: 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+        border: 1px solid;
+        input {
+            min-width: 0px;
+            flex-basis: 95%;
+            border: none;
+            outline: none;
+        }
+        button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+version: "3"
+services:
+  contacts-api:
+    build: ./
+    environment: 
+        DB_CONNECTION_URL: mongodb://mongo:27017
+        APPLICATION_PORT: '3030'
+    ports:
+      - "3030:3030"
+    depends_on: 
+      - mongo
+  mongo:
+    image: mongo
+    ports: 
+      - "27017:27017"
